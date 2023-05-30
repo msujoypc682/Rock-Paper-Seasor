@@ -1,0 +1,95 @@
+body {
+    text-align: center;
+    background-color: rgb(34, 150, 150);
+}
+
+/* Headings */
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 5rem;
+    color: rgb(0, 82, 82);
+    text-shadow: 4px 2px 0 black;
+}
+
+h3 {
+    color: rgb(0, 73, 156);
+    font-weight: bolder;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* Instruction */
+
+.instruction {
+    margin-top: 3rem;
+    padding: 5%;
+    background-color: rgb(23, 88, 88);
+    border-radius: 17%;
+    color: rgb(215, 236, 255);
+    border-style: solid;
+    border-color: rgb(9, 48, 48);
+}
+
+ul {
+    text-align: left;
+    font-size: large;
+    font-weight: bold;
+}
+
+li:hover, .setscore:hover {
+    color: rgb(255, 255, 92);
+    cursor: pointer;
+}
+
+/* Result */
+
+h2 {
+    font-family: 'Patrick Hand', cursive;
+    font-weight: bolder;
+    color: #ff592b;
+
+}
+
+.winner {
+    color: greenyellow;
+}
+
+.defeat {
+    color: aliceblue;
+}
+
+/* Scorebord */
+
+.setscore {
+    margin-top: 3rem;
+    padding: 2%;
+    background-color: rgb(23, 88, 88);
+    color: rgb(215, 236, 255);
+    border-style: solid;
+    border-color: rgb(9, 48, 48);
+}
+
+.scoreboard {
+    margin-top: 3%;
+    display: inline-block;
+    padding: 1% 10%;
+    background-color: #edbe8c;
+    border-style: solid;
+    border-color: black;
+    font-weight: bolder;
+    font-size: xx-large;
+    color: blue;
+}
+
+.winningScore {
+    margin-bottom: 1.5%;
+    color: rgb(141, 21, 0);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 20px;
+}
+
+/* Images */
+
+img {
+    border-radius: 100%;
+}
