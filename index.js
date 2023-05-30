@@ -32,6 +32,20 @@ function compPlayer(user) { // Player computer
     }
     document.querySelectorAll("h2")[0].innerHTML=resultUser;
     document.querySelectorAll("h2")[1].innerHTML=resultComp;
+    $(".scoreboard").text(userScore+" - "+compScore);
+}
+
+function winner() {
+  setTimeout(function() {
+    if (compScore >= winningScore) {
+      alert("COMPUTER WON...");
+      $(".scoreboard").text(0+" - "+0);
+    }
+    if (userScore >= winningScore) {
+      alert("YOU ARE THE WINNER...");
+      $(".scoreboard").text(0+" - "+0);
+    }
+  }, 300)
 }
 
 function battleScore() {
@@ -43,30 +57,59 @@ function battleScore() {
                 if (event.key>=1 && event.key<=3) {
                     document.querySelectorAll("img")[0].setAttribute("src", "images/"+event.key+".jpg");
                     compPlayer(event.key);
-                    $(".scoreboard").text(userScore+" - "+compScore);
                     setTimeout(function() {
-                      if (compScore == winningScore) {
+                      if (compScore >= winningScore) {
                         alert("COMPUTER WON...");
-                        return;
+                        $(".scoreboard").text(0+" - "+0);
                       }
-                      if (userScore == winningScore) {
+                      if (userScore >= winningScore) {
                         alert("YOU ARE THE WINNER...");
-                        return;
+                        $(".scoreboard").text(0+" - "+0);
                       }
-                    }, 500)
+                    }, 300)
                 }
             })
             document.querySelectorAll("li")[0].addEventListener("click", function() {
                 document.querySelectorAll("img")[0].setAttribute("src", "images/"+1+".jpg");
                 compPlayer(1);
+                setTimeout(function() {
+                  if (compScore >= winningScore) {
+                    alert("COMPUTER WON...");
+                    $(".scoreboard").text(0+" - "+0);
+                  }
+                  if (userScore >= winningScore) {
+                    alert("YOU ARE THE WINNER...");
+                    $(".scoreboard").text(0+" - "+0);
+                  }
+                }, 300)
             })
             document.querySelectorAll("li")[1].addEventListener("click", function() {
                 document.querySelectorAll("img")[0].setAttribute("src", "images/"+2+".jpg");
                 compPlayer(2);
+                setTimeout(function() {
+                  if (compScore >= winningScore) {
+                    alert("COMPUTER WON...");
+                    $(".scoreboard").text(0+" - "+0);
+                  }
+                  if (userScore >= winningScore) {
+                    alert("YOU ARE THE WINNER...");
+                    $(".scoreboard").text(0+" - "+0);
+                  }
+                }, 300)
             })
             document.querySelectorAll("li")[2].addEventListener("click", function() {
                 document.querySelectorAll("img")[0].setAttribute("src", "images/"+3+".jpg");
                 compPlayer(3);
+                setTimeout(function() {
+                  if (compScore >= winningScore) {
+                    alert("COMPUTER WON...");
+                    $(".scoreboard").text(0+" - "+0);
+                  }
+                  if (userScore >= winningScore) {
+                    alert("YOU ARE THE WINNER...");
+                    $(".scoreboard").text(0+" - "+0);
+                  }
+                }, 300)
             })
 
         } else {
@@ -80,7 +123,3 @@ $("h6").click(function() {
 document.addEventListener("keypress", function(event) {
     if (event.key=='w') battleScore();
 })
-
-// Player User
-
-//Player Computer
